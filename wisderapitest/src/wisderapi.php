@@ -4,15 +4,15 @@ namespace wisderapi;
  * @Author: charm
  * @Date:   2017-06-13 09:58:11
  * @Last Modified by:   3L-CZ
- * @Last Modified time: 2017-06-13 10:20:44
+ * @Last Modified time: 2017-06-13 11:18:48
  */
 /**
  * Class wisderapi
  * @package wisderapi
  * example
  * $data=array(
- *    'token'     =>'NxmEa/YxJt6Oq02Uldwq6J+ql+lyE8kXSFKbXn30hoVnvdYZuhk3ZvANDBknHUOCNkt2DffgKbE8oeP5S3ovt2fofYIZJoa8',
- *    'secret'    =>'e6637816a960445196fecd13007e4b40',
+ *    'token'     =>'2asdasqweqeqw',
+ *    'secret'    =>'234qw12v14fas',
  *    'url'       =>'http://60.174.195.124:6041/router/rest',
  * );
  * $wisderapi = new wisderapi($data);
@@ -32,11 +32,6 @@ class wisderapi {
     protected $conf=array();
     function __construct($conf){
         $this->conf=$conf;
-        // $this->conf =array(
-        //     'token'     =>'NxmEa/YxJt6Oq02Uldwq6J+ql+lyE8kXSFKbXn30hoVnvdYZuhk3ZvANDBknHUOCNkt2DffgKbE8oeP5S3ovt2fofYIZJoa8',
-        //     'secret'    =>'e6637816a960445196fecd13007e4b40',
-        //     'url'       =>'http://60.174.195.124:6041/router/rest',
-        // );
     }
     public function send($data){
         $param =array(
